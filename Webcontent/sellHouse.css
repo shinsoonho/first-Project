@@ -106,12 +106,32 @@ hr {
        
 }
 
-#form {
-    background-color: red;
-    width: 700px;
+.form {
+    background-color: white;
+    width: 800px;
     height: 300px;
-    margin: auto;
-    
+    margin: 100px 50px;
+    border: 1px solid black;
+}
+
+.label-form {
+    background-color: lightgray;
+    border-bottom: 1px solid black;
+    height: 30px;
+    line-height: 30px;
+
+}
+
+.label-form label {
+    font-size: 15pt;
+}
+
+.address-form label {
+    background-color: yellow;
+    width: 30px;
+
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
 
