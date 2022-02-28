@@ -1,46 +1,42 @@
 @charset "utf-8";
 
-
 html, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, body,
  p, blockquote, pre, a, abbr, acronym, address, big, cite, code, 
  del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong,
  sub, sup, tt, var, b, u, i, center, form, dl, dt, dd, ol, ul, li, input, 
- fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+ fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td{
     margin: 0;
     padding: 0;
     border: 0;
     vertical-align: top;
     background: transparent;
- }
-
- .clear {
-     clear: both;
- }
-
- body {
-     width: 1200px;
-     margin: auto;
- }
-
-#header {
-    
-    height: 60px;
-    margin: 0px;
-    padding: 0px;
-    background-color: beige;
-    position: relative;
-    
 }
 
-.logo a{
-    
+.clear {
+    clear: both;
+}
+
+body {
+    margin: auto;
+    width: 1200px;
+}
+
+#header {
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+    position: relative;
+}
+
+.logo a {
     width: 150px;
     background-color: bisque;
     text-align: center;
     height: 60px;
     line-height: 60px;
     text-decoration: none;
-    color: #000;
+    color: black;
     float: left;
 }
 
@@ -51,31 +47,27 @@ html, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, body,
     text-align: center;
     position: relative;
     line-height: 55px;
-
     float: right;
 }
 
-
 #gnav {
-    clear: both;
+    
     background-color: blueviolet;
-
     width: auto;
+    
 }
 
-#gnav ul{
-    
+#gnav ul {
     margin: 0;
     padding: 0;
-    
 }
 
 #gnav ul li {
     list-style-type: none;
-    float: left;
     background-color: aqua;
     width: 200px;
     text-align: center;
+    float: left;
 }
 
 #gnav a {
@@ -92,39 +84,44 @@ html, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, body,
 }
 
 hr {
-    
-    background-color: black;
     margin: 0;
     padding: 0;
+    background-color: black;
 }
 
-#maindiv {
-    background-color: lightslategray;
+
+#main {
     width: 100%;
-    position: relative;
+    background-color: lightslategray;
     
     display: flex;
-    
 }
 
-#maindiv main {
+#article {
     background-color: bisque;
     width: 75%;
     border: 0;
     padding: 0;
     margin: 0;
-    
-    
+       
+}
+
+#form {
+    background-color: red;
+    width: 700px;
+    height: 300px;
+    margin: auto;
     
 }
 
-#maindiv aside {
-    background-color: grey;
+
+#aside {
+    background-color: gray;
     width: 25%;
     border: 0;
     padding: 0;
     margin: 0;
-    
+    height: 20px;
     
     position: sticky;
     top: 0;
@@ -133,61 +130,18 @@ hr {
 
 
 
-#article {
-    border: 0px solid black;
-}
 
-.myinform {
-    margin-left: 10px;
-    margin-top: 2px;
-    margin-bottom: 2px;
-}
-
-#detail-search {
-    background-color: blue;
-    width: 500px;
-    height: 300px;
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    
-}
-
-.fixSearch table {
-    margin: 100px;
-    margin-right: 100px;
-    border-collapse: collapse;
-}
-
-.fixSearch td{
-    padding: 10px;
-    border: 20px solid white;
-    background-color: brown;
-}
-
-#article2 {
-    background-color: aqua;
-    display: flex;
-
-}
-
-.news {
-    width: 150px;
-    background-color: aliceblue;
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-bottom: 100px;
-    
-}
 
 #footer {
-    clear: both;
+    
     background-color: darkkhaki;
     height: 100px;
-    
+    line-height: 100px;
 }
 
 #footer h5 {
+    
     text-align: center;
     
+
 }

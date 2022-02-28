@@ -10,39 +10,39 @@
 <body>
 
     <header id="header">
-        
-            <h1 class="logo">로고</h1>
-            <div class="logo-side">
-                <form>
-                    <input type="search" style="border: 1px solid black;">
-                    <button type="button" onclick="login">로그인</button>
-                    <button type="button" onclick="makeLogin">회원가입</button>
-                </form>
-            </div>
+        <div>
+            <h1 class="logo"><a href="#">로고</a></h1>
         </div>
+        <div class="logo-side">
+            <form>
+                <input class="form-search" type="search" style="border: 1px solid black; margin-top: 20px;">
+                <button type="button" onclick="login()">로그인</button>
+                <button type="button" onclick="makeLogin()">회원가입</button>
+            </form>
+        </div>
+        
     </header>
+   
     
     
     <nav id="gnav">
         
         <ul>
-            <li><a href="#">홈</a></li>
-            <li><a href="#">집구하기</a></li>
-            <li><a href="#">집내놓기</a></li>
+            <li><a href="main.html">홈</a></li>
+            <li><a href="getHouse.html" target="_self">집구하기</a></li>
+            <li><a href="sellHouse.html">집내놓기</a></li>
             <li><a href="#">게시판</a></li>
             <li><a href="#">뉴스</a></li>
             <li><a href="#">고객센터</a></li>
         </ul>
     </nav>
-    <hr color="black" size="3">
+    <hr size="3">
     <div id="maindiv">
-
         <main id="main">
-            <h2>메인</h2>
-            asdasd
+            
             <article id="article1">
-                <form id="searchFrame">
-                    검색폼d
+                <form id="detail-search">
+                    검색폼
                 </form>
             </article>
             <article id="article2">
@@ -60,11 +60,10 @@
                     <h5>뉴스</h5>
                 </section>
             </article>
-
+            
+            
         </main>
-
-        <div>
-            <article id="article">
+        <aside id="aside1">
                 <section class="myinform name">
                     <h3>회원이름</h3>
                 </section>
@@ -75,8 +74,10 @@
                     <h4>관심목록</h4>
                 </section>
                 
-            </article>
-        </div>
+            </aside>
+
+        
+        
     </div>
     <footer id="footer">
         <h5>2022.Copyright All rights reserved</h5>
