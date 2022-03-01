@@ -84,6 +84,8 @@ body {
 }
 
 hr {
+    border: 0;
+    height: 1px;
     margin: 0;
     padding: 0;
     background-color: black;
@@ -108,9 +110,9 @@ hr {
 
 .form {
     background-color: white;
-    width: 800px;
-    height: 300px;
-    margin: 100px 50px;
+    width: 600px;
+    height: auto;
+    margin: auto;
     border: 1px solid black;
 }
 
@@ -123,16 +125,141 @@ hr {
 }
 
 .label-form label {
+    
     font-size: 15pt;
 }
 
+.address-form {
+    background-color: beige;
+    height: 82px;
+    line-height: 40px;
+
+}
+
+
 .address-form label {
+
+    display: inline-block;
+
+    margin: 0;
+    padding: 0;
+
     background-color: yellow;
-    width: 30px;
+    width: 100px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
 
     border: 1px solid black;
-    border-radius: 5px;
+    
 }
+
+.address-form input {
+    display: inline-block;
+
+    width: 300px;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 10px;
+
+    background-color: orange;
+}
+
+.picture {
+    background-color: beige;
+    height: 80px;
+}
+
+
+.add-picture {
+
+}
+
+
+.detail-info-frame {
+    
+}
+
+
+
+.detail-info-frame label {
+    width: 288px;
+    border: 0;
+    
+    line-height: 50px;
+    
+}
+
+
+
+.detail-info-frame .detail-label {
+    
+    border-right: 1px solid;
+    height: 50px;
+    width: 120px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.detail-info-frame input {
+    margin: 9px;
+    height: 30px;
+    width: 170px;
+    
+}
+
+.deposit, .rent, .room-structure, .maintenance-cost, .room-size, .floor,
+.direction, .room-option , .loan, .companion-animal, .parking, .move-in,
+.title-name, .detail-explanation, .host-existence {
+    display: flex;
+    
+}
+
+.room-structure select {
+    
+    margin: 10px;
+    width: 100px;
+    height: 30px;
+}
+
+
+
+.maintenance-cost .detail-label {
+    height: 101px;
+    line-height: 101px;
+    
+}
+
+.maintenance-cost-inner1 {
+
+    width: 479px;
+    height: 50px;
+    
+}
+
+.maintenance-cost-inner2 {
+    
+    display: inline-block;
+    width: 479px;
+    height: 50px;
+    
+}
+
+
+
+
+
+.maintenance-cost-inner2 label {
+    
+    display: block;
+    background-color: beige;
+    
+    text-align: center;
+    height: 50px;
+    
+}
+
+
 
 
 #aside {
