@@ -133,24 +133,82 @@
 
 .maintenance-cost-inner2 {
     
-    display: inline-block;
+    display: flex;
     width: 479px;
     height: 50px;
     
 }
 
-
-
-
-
-.maintenance-cost-inner2 label {
+.maintenance-cost-inner2 .c {
     
-    display: block;
-    background-color: beige;
+    width: 130px;
+}
+
+input[type=checkbox] {
+    zoom: 0.6;
+    width: 50px;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+
+
+
+.room-size .detail-label {
+    height: 69px;
+}
+
+.room-size-inner-container input {
+    height: 25px;
+}
+
+.room-size-inner-container {
+    margin: 5px;
+}
+
+.room-size-inner-container input {
+    border: 1px solid;
+    width: 50px;
+    margin: 0;
+}
+
+.room-size-inner-container-top {
+    margin-bottom: 5px;
+}
+
+.floor input {
+    border: 1px solid;
+    width: 50px;
+    font-size: 15px;
+    text-align: right;
+    padding-right: 5px;
+}
+
+.direction select {
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
     
-    text-align: center;
-    height: 50px;
-    
+}
+
+.room-option .detail-label {
+    height: 80px;
+    line-height: 80px;
+}
+
+
+.room-option-container {
+    width: 479px;
+}
+
+
+
+.room-option-container label {
+    display: inline-block;
+    width: 115px;
+    line-height: 0;
+    margin-top: 7px;
+     
 }
 
 
