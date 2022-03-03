@@ -103,8 +103,8 @@
 }
 
 .deposit, .rent, .room-structure, .maintenance-cost, .room-size, .floor,
-.direction, .room-option , .loan, .companion-animal, .parking, .move-in,
-.title-name, .detail-explanation, .host-existence {
+.direction, .room-option , .loan, .companion-animal, .parking, .elevator, 
+.move-in, .title-name, .detail-explanation, .host-existence {
     display: flex;
     
 }
@@ -152,10 +152,18 @@ input[type=checkbox] {
     vertical-align: middle;
 }
 
+input[type=radio] {
+    zoom: 0.6;
+    width: 50px;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}
 
 
 .room-size .detail-label {
     height: 69px;
+    line-height: 69px;
 }
 
 .room-size-inner-container input {
@@ -164,6 +172,7 @@ input[type=checkbox] {
 
 .room-size-inner-container {
     margin: 5px;
+    width: 469px;
 }
 
 .room-size-inner-container input {
@@ -211,5 +220,88 @@ input[type=checkbox] {
      
 }
 
+.loan .detail-label {
+    height: 101px;
+    line-height: 101px;
+}
+
+.loan-container {
+    width: 479px;
+
+}
+
+.loan-container-top {
+    height: 50px;
+    margin-left: 5px;
+
+}
+
+.loan-container-bottom {
+    height: 50px;
+    margin-left: 5px;
+}
+
+.companion-animal-container {
+    margin-left: 5px;
+    width: 474px;
+    
+}
+
+.parking-container {
+    margin-left: 5px;
+    width: 474px;
+    
+}
+
+.elevator-container {
+    margin-left: 5px;
+    width: 474px;
+    
+}
+
+.move-in-container {
+    margin-left: 5px;
+    width: 474px;
+    line-height: 50px;
+}
+
+.move-in-container input{
+    width: 50px;
+    height: 27px;
+    border: 1px solid;
+}
 
 
+.title-name-container {
+    
+    width: 479px;
+}
+
+.title-name-container input {
+    width: 460px;
+    height: 30px;
+    margin: 9px 8.5px;
+    
+    border: 1px solid;
+}
+
+
+.detail-explanation .detail-label {
+    height: 200px;
+}
+
+.detail-explanation-container {
+    width: 479px;
+    
+}
+
+.detail-explanation-container textarea {
+    width: 450px;
+    margin: 9px 8.5px;
+    height: 176px;
+    padding: 0;
+}
+
+.host-existence-container label+label {
+    margin-left: 100px;
+}

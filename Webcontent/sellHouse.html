@@ -49,7 +49,7 @@
                     <div class="address">
                         <label>주소</label><input type="search" value="주소를 입력하세요">
                     </div>
-                    <hr style="background-color: rgba(0, 0, 0, 0.1);">
+                    
                     <div class="detail-address">
                         <label>상세주소</label><input type="search" value="상세주소를 입력하세요">
                     </div>
@@ -83,7 +83,6 @@
                     
                         <label class="detail-label">보증금</label>
                     
-                        <hr style="background-color: rgba(0, 0, 0, 0.1);">
                         
                         <input class="detial-input" type="number" style="border: 1px solid;">
                         <label>만원</label>
@@ -95,7 +94,6 @@
                     
                         <label class="detail-label">월세</label>
                     
-                        <hr style="background-color: rgba(0, 0, 0, 0.1);">
                         
                         <input class="detial-input" type="number" style="border: 1px solid;">
                         <label>만원</label>
@@ -107,7 +105,6 @@
                     
                         <label class="detail-label">방구조</label>
                     
-                        <hr style="background-color: rgba(0, 0, 0, 0.1);">
                         
                         <select>
                             <option>전세</option>
@@ -153,7 +150,6 @@
                     
                         <label class="detail-label">크기</label>
                     
-                        <hr style="background-color: rgba(0, 0, 0, 0.1);">
                         
                         <div class="room-size-inner-container">
                             <div class="room-size-inner-container-top">
@@ -174,7 +170,6 @@
                     
                         <label class="detail-label">층수</label>
                     
-                        <hr style="background-color: rgba(0, 0, 0, 0.1);">
                         
                         <input type="text">
                         <label>층</label>
@@ -186,7 +181,6 @@
                     
                         <label class="detail-label">방향</label>
                     
-                        <hr style="background-color: rgba(0, 0, 0, 0.1);">
                         
                         <select>
                             <option>동향</option>
@@ -207,7 +201,6 @@
                     
                         <label class="detail-label">옵션</label>
                     
-                        <hr style="background-color: rgba(0, 0, 0, 0.1);">
 
                         <div class="room-option-container">
                             <label><input type="checkbox">에어컨</label>
@@ -232,10 +225,21 @@
                     
                         <label class="detail-label">전세대출</label>
                     
-                        <hr style="background-color: rgba(0, 0, 0, 0.1);">
-                        
-                        <input class="detial-input" type="number" style="border: 1px solid;">
-                        <label>만원</label>
+                       <div class="loan-container">
+                            <div class="loan-container-top">
+                                <label><input type="radio" name="loan-type">가능</label>
+                                <label><input type="radio" name="loan-type">불가능</label>
+                                <label><input type="radio" name="loan-type">확인필요</label>
+                            </div>
+                            <hr>
+                            <div class="loan-container-bottom">
+                                <label><input type="checkbox">LH</label>
+                                <label><input type="checkbox">SH</label>
+                                <label><input type="checkbox">중기청80%</label>
+                                <label><input type="checkbox">중기청100%</label>
+                                <label><input type="checkbox">버팀목</label>
+                            </div>
+                       </div>
                         
                     </div>
                     <hr>
@@ -243,11 +247,13 @@
                     <div class="companion-animal">
                     
                         <label class="detail-label">반려동물</label>
-                    
-                        <hr style="background-color: rgba(0, 0, 0, 0.1);">
-                        
-                        <input class="detial-input" type="number" style="border: 1px solid;">
-                        <label>만원</label>
+
+                        <div class="companion-animal-container">
+                            <label><input type="radio" name="animal">가능</label>
+                            <label><input type="radio" name="animal">불가능</label>
+                            <label><input type="radio" name="animal">확인필요</label>
+                        </div>
+                                    
                         
                     </div>
                     <hr>
@@ -256,10 +262,23 @@
                     
                         <label class="detail-label">주차</label>
                     
-                        <hr style="background-color: rgba(0, 0, 0, 0.1);">
+                        <div class="parking-container">
+                            <label><input type="radio" name="animal">가능</label>
+                            <label><input type="radio" name="animal">불가능</label>
+                            <label><input type="radio" name="animal">확인필요</label>
+                        </div>                 
                         
-                        <input class="detial-input" type="number" style="border: 1px solid;">
-                        <label>만원</label>
+                    </div>
+                    <hr>
+
+                    <div class="elevator">
+                    
+                        <label class="detail-label">엘리베이터</label>
+                    
+                        <div class="elevator-container">
+                            <label><input type="radio" name="animal">있음</label>
+                            <label><input type="radio" name="animal">없음</label>
+                        </div>                 
                         
                     </div>
                     <hr>
@@ -268,10 +287,14 @@
                     
                         <label class="detail-label">입주가능일</label>
                     
-                        <hr style="background-color: rgba(0, 0, 0, 0.1);">
+                        <div class="move-in-container">
+                            <label><input type="radio" name="animal">즉시가능</label>
+                            <label><input type="radio" name="animal">기타</label>
+                            <input type="text">년
+                            <input type="text">월
+                            <input type="text">일
+                        </div>
                         
-                        <input class="detial-input" type="number" style="border: 1px solid;">
-                        <label>만원</label>
                         
                     </div>
                     <hr>
@@ -280,10 +303,9 @@
                     
                         <label class="detail-label">제목</label>
                     
-                        <hr style="background-color: rgba(0, 0, 0, 0.1);">
-                        
-                        <input class="detial-input" type="number" style="border: 1px solid;">
-                        <label>만원</label>
+                        <div class="title-name-container">
+                            <input type="text">
+                        </div>
                         
                     </div>
                     <hr>
@@ -292,10 +314,10 @@
                     
                         <label class="detail-label">상세설명</label>
                     
-                        <hr style="background-color: rgba(0, 0, 0, 0.1);">
                         
-                        <input class="detial-input" type="number" style="border: 1px solid;">
-                        <label>만원</label>
+                        <div class="detail-explanation-container">
+                            <textarea>입력하시오</textarea>
+                        </div> 
                         
                     </div>
                     <hr>
@@ -305,10 +327,11 @@
                     
                         <label class="detail-label">집주인여부</label>
                     
-                        <hr style="background-color: rgba(0, 0, 0, 0.1);">
                         
-                        <input class="detial-input" type="number" style="border: 1px solid;">
-                        <label>만원</label>
+                        <div class="host-existence-container">
+                            <label><input type="radio" name="host">집주인 입니다.</label>
+                            <label><input type="radio" name="host">세입자 입니다.</label>
+                        </div>
                         
                     </div>
                     <hr>
