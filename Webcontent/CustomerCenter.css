@@ -1,1 +1,33 @@
 @charset "utf-8";
+
+ *{
+     font-size: 17px;
+     
+ }
+
+#article {
+    margin: 50px 20px;
+}
+
+h2 {
+    padding: 20px 20px 10px 20px;
+    font-size: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    margin-bottom: 30px;
+}
+
+td {
+    width: 174px;
+    padding: 10px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
