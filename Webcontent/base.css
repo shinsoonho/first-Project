@@ -12,6 +12,10 @@ html, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, body,
     background: transparent;
 }
 
+*{
+    font-size: 17px;
+}
+
 .clear {
     clear: both;
 }
@@ -40,14 +44,21 @@ body {
     float: left;
 }
 
-.logo-side {
+.logo-side form {
     background-color: brown;
     height: 60px;
-    width: 320px;
+    width: 400px;
     text-align: center;
     position: relative;
-    line-height: 55px;
+    line-height: 60px;
     float: right;
+}
+
+.logo-side .form-search {
+    border: 1px solid black;
+    vertical-align: middle;
+    width: 170px;
+    margin-right: 10px;
 }
 
 #gnav {
