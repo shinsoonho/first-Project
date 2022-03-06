@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="base.css">
+    <link rel="stylesheet" type="text/css" href="bulletinBoard.css">
     <title>홈페이지</title>
 </head>
 <body>
@@ -42,9 +43,52 @@
     <main id="main">
         <article id="article">
 
-            <h1>아티클</h1>
-            
-            <h1>아티클</h1>
+            <table class="board-table">
+                <caption><h2 style="text-align: left; margin: 20px;">자유게시판</h2></caption>
+                <colgroup>
+                    <col class="show-col" style="width: 120px;">
+                    <col class="subject">
+                    <col style="width: 10%;">
+                    <col style="width: 10%;">
+                    <col style="width: 10%;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th class="show-col">순번</th>
+                        <th class="subject">제목</th>
+                        <th>작성자</th>
+                        <th>작성일</th>
+                        <th>조회수</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="show-col">1</td>
+                        <td class="subject">게시글1</td>
+                        <td>작성자1</td>
+                        <td>today</td>
+                        <td>num</td>
+                    </tr>
+                </tbody>
+             </table>
+
+             <div class="board-search-container">
+                 <div class="form-group">
+                    <select style="width: 150px;">
+                        <option value="">검색선택</option>
+                        <option value="">제목</option>
+                        <option value="">내용</option>
+                        <option value="">등록자명</option>
+                    </select>
+                 </div>
+                 <div class="form-group">
+                    <input type="text" placeholder="검색어를 입력하세요.">
+                    
+                 </div>
+                 <button type="submit" class="btn-search">검색</button>
+                
+                
+               
 
         </article>
 
