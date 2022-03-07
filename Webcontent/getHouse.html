@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="UTF-8">
+<html lang="kor">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="base.css">
     <link rel="stylesheet" type="text/css" href="getHouse.css">
+    <script type="text/javascript" src="searchForm.js"></script>
     <title>홈페이지</title>
 </head>
 <body>
@@ -17,8 +18,8 @@
         <div class="logo-side">
             
             <form>
-                <input class="form-search" type="search" style="border: 1px solid black; margin-top: 20px;">
-                <button type="button" onclick="login()">로그인</button>
+                <input class="form-search" type="search">
+                <button type="button" onclick="location.href='login.html'">로그인</button>
                 <button type="button" onclick="makeLogin()">회원가입</button>
             </form>
         </div>
@@ -47,7 +48,33 @@
     
         <article id="article">
             <section class="detail-search">
-                검색폼
+                <div class="local-list1">
+                    
+                    <ul>
+                        <li class="seoul"><button onclick="listCheckSeoul()">서울시</button></li>
+                        <li class="gyeonggi"><button onclick="listCheckGyeonggi()">경기도</button></li>
+                        <li class="incheon"><button onclick="listCheckIncheon()">인천시</button></li>
+                        <li class="busan"><button onclick="listCheckBusan()">부산시</button></li>
+                        <li class="daejeon"><button onclick="listCheckDaejeon()">대전시</button></li>
+                        <li class="daegu"><button onclick="listCheckDaegu()">대구시</button></li>
+                        <li class="ulsan"><button onclick="listCheckUlsan()">울산시</button></li>
+                        <li class="sejong"><button onclick="listCheckSejong()">세종시</button></li>
+                        <li class="gwangju"><button onclick="listCheckGwangju()">광주시</button></li>
+                        <li class="kangwon"><button onclick="listCheckKangwon()">강원도</button></li>
+                        <li class="chungbuk"><button onclick="listCheckChungbuk()">충청북도</button></li>
+                        <li class="chungnam"><button onclick="listCheckChungnam()">충청남도</button></li>
+                        <li class="gyeongbuk"><button onclick="listCheckGyeongbuk()">경상북도</button></li>
+                        <li class="gyeongnam"><button onclick="listCheckGyeongnam()">경상남도</button></li>
+                        <li class="jeonbuk"><button onclick="listCheckJeonbuk()">전라북도</button></li>
+                        <li class="jeonnam"><button onclick="listCheckJeonnam()">전라남도</button></li>
+                        <li class="jeju"><button onclick="listCheckJeju()">제주도</button></li>
+                    </ul>
+                </div>
+                <div class="local-list2">
+                    <ul id="local-list2-item">
+                        
+                    </ul>
+                </div>
             </section>
             <section class="view-list">
                 <ul>

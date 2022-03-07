@@ -1,15 +1,71 @@
 @charset "utf-8";
 
 
+
 .detail-search {
-    background-color: blue;
-    width: 500px;
-    height: 300px;
+    background-color: white;
+    width: 800px;
+    height: 350px;
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
+    display: block;
 
 }
+
+.detail-search ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    
+}
+
+.detail-search button {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #bcbcbc;
+    border-radius: 4px;
+    border: 1px solid #bcbcbc;
+}
+
+.local-list1 {
+    overflow: hidden;
+    float: left;
+    position: relative;
+    width: 190px;
+    height: 350px;
+    
+    border-right: 1px solid #bcbcbc;
+}
+
+.local-list2 {
+    overflow: hidden;
+    overflow-y: scroll;
+    float: left;
+    position: relative;
+    width: 230px;
+    height: 350px;
+    border-right: 1px solid #bcbcbc;
+}
+
+.detail-search li {
+    overflow: hidden;
+    float: left;
+    text-align: center;
+    margin: 0 1px 10px 7px;
+    padding: 0 7px;
+    display: list-item;
+    width: 70px;
+    
+}
+
 
 .view-list {
     width: 720px;
