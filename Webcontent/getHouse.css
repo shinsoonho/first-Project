@@ -1,15 +1,17 @@
 @charset "utf-8";
 
 
-
 .detail-search {
     background-color: white;
     width: 800px;
-    height: 350px;
+    height: 365px;
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
     display: block;
+    border: 1px solid;
+    border-radius: 4px;
+    
 
 }
 
@@ -40,7 +42,7 @@
     float: left;
     position: relative;
     width: 190px;
-    height: 350px;
+    height: 365px;
     
     border-right: 1px solid #bcbcbc;
 }
@@ -51,9 +53,25 @@
     float: left;
     position: relative;
     width: 230px;
-    height: 350px;
-    border-right: 1px solid #bcbcbc;
+    height: 365px;
+    
 }
+
+.local-list3 {
+    float: left;
+    width: 379px;
+    height: 365px;
+    text-align: center;
+    line-height: 365px;
+
+}
+
+.local-list3-map {
+    width: 350px;
+    height: 100%;
+    margin: auto;
+}
+
 
 .detail-search li {
     overflow: hidden;
