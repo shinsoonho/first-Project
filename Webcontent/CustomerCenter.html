@@ -1,24 +1,41 @@
 <!DOCTYPE html>
-<html lang="UTF-8">
+<html lang="kor">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="base.css">
     <link rel="stylesheet" type="text/css" href="CustomerCenter.css">
+    <script src="js/jquery-3.6.0.js"></script>
+    <script>
+        $(function() {
+            $(".menu-toggle").click(function() {
+                this.value += parseInt(1);
+                if(this.value == 1) {
+                    $("#article").css("width","80%");
+                    $("#aside").css("width","20%").css("display","block");
+                } else {
+                    $("#article").css("width","100%");
+                    $("#aside").css("width","0%").css("display","none");
+                    this.value = "";
+                }
+            });
+        });
+    </script>
     <title>홈페이지</title>
 </head>
 <body>
 
     <header id="header">
         <div>
-            <h1 class="logo"><a href="main.html">로고</a></h1>
+            <h1 class="logo"><a href="main.html"><img src="images/logo.png"></a></h1>
         </div>
         <div class="logo-side">
             <form>
-                <input class="form-search" type="search" style="border: 1px solid black; margin-top: 20px;">
-                <button type="button" onclick="login()">로그인</button>
+                <input class="form-search" type="search">
+                <button type="button" onclick="location.href='login.html'">로그인</button>
                 <button type="button" onclick="makeLogin()">회원가입</button>
+                <button class="menu-toggle" value="0" type="button">Menu</button>
             </form>
         </div>
     </header>
@@ -42,38 +59,38 @@
 
     <main id="main">
         <article id="article">
+            <div class="customercenter-table-container">
+                <table class="customercenter-table customer-manage">
+                    <caption><h2 style="text-align: left;">회원정보 관리</h2></caption>
+                    <tr>
+                        <td><a href="#">ID/비밀번호 찾기</a></td>
+                        <td><a href="#">비밀번호 변경</a></td>
+                        <td><a href="#">회원정보 수정</a></td>
+                        <td></td>
+                    </tr>
+                </table>
 
-            <table>
-                <caption><h2 style="text-align: left;">회원정보 관리</h2></caption>
-                <tr>
-                    <td><a href="#">ID/비밀번호 찾기</a></td>
-                    <td><a href="#">비밀번호 변경</a></td>
-                    <td><a href="#">회원정보 수정</a></td>
-                    <td></td>
-                </tr>
-            </table>
+                <table class="customercenter-table report">
+                    <caption><h2 style="text-align: left;">신고하기</h2></caption>
+                    <tr>
+                        <td><a href="#">허위매물 신고</a></td>
+                        <td><a href="#">유해게시물 신고</a></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
 
-            <table>
-                <caption><h2 style="text-align: left;">신고하기</h2></caption>
-                <tr>
-                    <td><a href="#">허위매물 신고</a></td>
-                    <td><a href="#">유해게시물 신고</a></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-
-            <table>
-                <caption><h2 style="text-align: left;">문의하기</h2></caption>
-                <tr>
-                    <td><a href="#">1:1 문의하기</a></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    
-                </tr>
-            </table>
-            
+                <table class="customercenter-table inquire">
+                    <caption><h2 style="text-align: left;">문의하기</h2></caption>
+                    <tr>
+                        <td><a href="#">1:1 문의하기</a></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                    </tr>
+                </table>
+            </div>
         </article>
 
         <aside id="aside">

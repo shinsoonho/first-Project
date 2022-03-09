@@ -5,29 +5,33 @@
      
  }
 
-#article {
-    margin: 50px 20px;
+.customercenter-table-container {
+    margin: 50px;
 }
 
-h2 {
+.customercenter-table h2 {
     padding: 20px 20px 10px 20px;
-    font-size: 20px;
+    font-size: 30px;
 }
 
-table {
+.customercenter-table {
     width: 100%;
     border-collapse: collapse;
     border-top: 1px solid;
     border-bottom: 1px solid;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
 }
 
-td {
+.customercenter-table td {
     width: 174px;
     padding: 10px;
+    height: 50px;
+    vertical-align: middle;
 }
 
-a {
+.customercenter-table a {
     color: black;
     text-decoration: none;
+    font-size: 20px;
+    
 }
