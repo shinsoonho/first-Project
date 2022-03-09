@@ -32,9 +32,9 @@
     height: 100%;
     vertical-align: middle;
     cursor: pointer;
-    background-color: #bcbcbc;
+    color: black;
     border-radius: 4px;
-    border: 1px solid #bcbcbc;
+    border: 0;
 }
 
 .local-list1 {
@@ -45,6 +45,10 @@
     height: 365px;
     
     border-right: 1px solid #bcbcbc;
+}
+
+.local-list1 button:hover {
+    color: #35c5f0;
 }
 
 .local-list2 {
@@ -86,9 +90,16 @@
 
 
 .view-list {
-    width: 720px;
+    width: 800px;
     margin: auto;
     background-color: aquamarine;
+}
+
+.view-list-container {
+    
+    margin: auto;
+    padding: 50px 0;
+    background-color: #E6F9FE;
 }
 
 .view-list ul {
@@ -97,28 +108,29 @@
     overflow: hidden;
 }
 
-.view-list ul li a {
-    display: block;
-    background-color: white;
-}
-
-.view-list ul li {
+.view-list-item {
     list-style-type: none;
-    width: 33%;
-    height: 420px;
-    margin-left: 0.3%;
-    margin-bottom: 10px;
+    width: 30%;
+    height: 390px;
+    margin-left: 2.5%;
+    margin-bottom: 50px;
     float: left;
-    background-color: red;
     display: block;
-    
-
+    background-color: #f5fdff;
 }
+
+.view-list-item a {
+    width: 85%;
+    margin: auto;
+    display: block;
+}
+
+
 
 .list-image img{
     padding: 0;
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 210px;
     display: block;
     margin: auto;
     margin-top: 15px;
@@ -129,10 +141,14 @@
 .list-preview {
     
     text-align: center;
-    height: 190px;
-    background-color: blueviolet;
+    height: 140px;
+    background-color: #E6F9FE;
+    overflow: hidden;
 }
 
 
+.list-preview p {
+    margin-bottom: 5px;
+}
 
 

@@ -6,14 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="base.css">
     <link rel="stylesheet" type="text/css" href="getHouse.css">
+    <script src="js/jquery-3.6.0.js"></script>
     <script type="text/javascript" src="searchForm.js"></script>
+    <script>
+        $(function() {
+            $(".menu-toggle").click(function() {
+                this.value += parseInt(1);
+                if(this.value == 1) {
+                    $("#article").css("width","80%");
+                    $("#aside").css("width","20%").css("display","block");
+                } else {
+                    $("#article").css("width","100%");
+                    $("#aside").css("width","0%").css("display","none");
+                    this.value = "";
+                }
+            });
+        });
+    </script>
     <title>홈페이지</title>
 </head>
 <body>
     
     <header id="header">
         <div>
-            <h1 class="logo"><a href="main.html">로고</a></h1>
+            <h1 class="logo"><a href="main.html"><img src="images/logo.png"></a></h1>
         </div>
         <div class="logo-side">
             
@@ -21,6 +37,7 @@
                 <input class="form-search" type="search">
                 <button type="button" onclick="location.href='login.html'">로그인</button>
                 <button type="button" onclick="makeLogin()">회원가입</button>
+                <button class="menu-toggle" value="0" type="button">Menu</button>
             </form>
         </div>
         
@@ -82,80 +99,72 @@
                 </div>
             </section>
             <section class="view-list">
-                <ul>
-                    <li>
-                        <a href="#">
-                            <div class="list-image">
-                                <img src="images/apple.png" alt="이미지">
-                            </div>
-                            <div class="list-preview">
-                                <p>
-                                    <h4>이미지1</h4>
-                                    <span>이미지에대한 내용</span>
-                                </p>
-                            </div>
+                <div class="view-list-container">
+                    <ul>
+                        <li class="view-list-item">
+                            <a href="#">
+                                <div class="list-image">
+                                    <img src="images/apple.png" alt="이미지">
+                                </div>
+                                <div class="list-preview">
+                                    <p>
+                                        <p class="title"><strong style="font-size: 20px;">월세 500/20</strong></p>
+                                        <p class="floor">19m<sup>2</sup>, 반지하</p>
+                                        <p class="place">고양시 덕양구 성사동</p>
+                                        <p class="coment" style="color: darkgray;">깨끗하고 퀘적한 원룸, 월세, 반월세</p>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="view-list-item">
+                            <a href="#">
+                                <div class="list-image">
+                                    <img src="images/apple.png" alt="이미지">
+                                </div>
+                                <div class="list-preview">
+                                    <p>
+                                        <p class="title"><strong style="font-size: 20px;">전세 2억 1,000</strong></p>
+                                        <p class="floor">27m<sup>2</sup>, 3층</p>
+                                        <p class="place">서초구 반포동</p>
+                                        <p class="coment" style="color: darkgray;">역세권 올 리모델링 귀한전세</p>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="view-list-item">
+                            <a href="#">
+                                <div class="list-image">
+                                    <img src="images/apple.png" alt="이미지">
+                                </div>
+                                <div class="list-preview">
+                                    <p>
+                                        <p class="title"><strong style="font-size: 20px;">월세 2,000/35</strong></p>
+                                        <p class="floor">16m<sup>2</sup>, 1층</p>
+                                        <p class="place">서대문구 창천동</p>
+                                        <p class="coment" style="color: darkgray;">대로변위치 가성비굿</p>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="view-list-item">
+                            <a href="#">
+                                <div class="list-image">
+                                    <img src="images/apple.png" alt="이미지">
+                                </div>
+                                <div class="list-preview">
+                                    <p>
+                                        <p class="title"><strong style="font-size: 20px;">전세 4,500</strong></p>
+                                        <p class="floor">19m<sup>2</sup>, 8층</p>
+                                        <p class="place">금천구 독산동</p>
+                                        <p class="coment" style="color: darkgray;">독산역 가성비좋은 귀한전세</p>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+
                         
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="list-image">
-                                <img src="images/apple.png" alt="이미지">
-                            </div>
-                            <div class="list-preview">
-                                <p>
-                                    <h4>이미지2</h4>
-                                    <span>이미지에대한 내용</span>
-                                </p>
-                            </div>
-                        
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="list-image">
-                                <img src="images/apple.png" alt="이미지">
-                            </div>
-                            <div class="list-preview">
-                                <p>
-                                    <h4>이미지3</h4>
-                                    <span>이미지에대한 내용</span>
-                                </p>
-                            </div>
-                        
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="list-image">
-                                <img src="images/apple.png" alt="이미지">
-                            </div>
-                            <div class="list-preview">
-                                <p>
-                                    <h4>이미지4</h4>
-                                    <span>이미지에대한 내용</span>
-                                    
-                                </p>
-                            </div>
-                        
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="list-image">
-                                <img src="images/apple.png" alt="이미지">
-                            </div>
-                            <div class="list-preview">
-                                <p>
-                                    <h4>이미지5</h4>
-                                    <span>이미지에대한 내용</span>
-                                </p>
-                            </div>
-                        
-                        </a>
-                    </li>
-                    
-                </ul>
+                    </ul>
+                </div>
             </section>
             
         </article>
