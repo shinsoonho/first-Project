@@ -5,9 +5,13 @@
     padding-right: 10px;
     padding-left: 10px;
     margin: 1px;
-    border: 1px solid #d2d2d2;
+    border: 1px solid black;
     font-size: 14px;
     box-sizing: border-box;
+}
+
+.board-table-container {
+    margin: 50px;
 }
 
 .btn-search {
@@ -15,12 +19,11 @@
     width: 60px;
 }
 
-#article {
-    margin: 20px;
-}
+
 
 th {
-    border-right: 1px dotted lightgray;
+    border-right: 1px solid #d2d2d2;
+    
 }
 
 th:last-child {
@@ -29,7 +32,7 @@ th:last-child {
 
 td, th {
     
-    border-bottom: 1px dotted;
+    border-bottom: 1px solid #b4b4b4 ;
     font-size: 18px;
     padding: 5px;
     text-align: center;
@@ -49,6 +52,7 @@ colgroup {
     width: 100%;
     border-top: 2px solid;
     border-bottom: 2px solid;
+    border-collapse: collapse;
 
 }
 
