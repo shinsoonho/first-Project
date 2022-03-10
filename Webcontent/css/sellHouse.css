@@ -68,19 +68,30 @@
     border-radius: 5px;
 }
 
-.picture {
+
+
+
+.add-picture-container {
+    width: 90%;
+    margin: auto;
     
-    height: 80px;
 }
 
 
-.add-picture {
-
+.add-picture-container li {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 18px;
+    border: 1px solid rgb(0, 0, 0, 0.5);
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
 }
 
-
-.detail-info-frame {
-    
+.add-picture-container span {
+    font-size: 3.5em;
+    color: rgb(0, 0, 0, 0.2);
 }
 
 
@@ -97,7 +108,7 @@
 
 .detail-info-frame .detail-label {
     
-    border-right: 1px solid;
+    border-right: 1px solid rgb(0, 0, 0, 0.2);
     height: 50px;
     width: 120px;
     text-align: center;
@@ -115,8 +126,16 @@
 .direction, .room-option , .loan, .companion-animal, .parking, .elevator, 
 .move-in, .title-name, .detail-explanation, .host-existence {
     display: flex;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.2);
     
 }
+
+.host-existence {
+    border-bottom: 0;
+}
+
+
+
 
 .room-structure select {
     
@@ -133,25 +152,37 @@
     
 }
 
+.maintenance-cost-inner {
+    width: 679px;
+}
+
 .maintenance-cost-inner1 {
 
-    width: 479px;
+    
     height: 50px;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.2);
     
 }
 
 .maintenance-cost-inner2 {
     
     display: flex;
-    width: 479px;
+    
     height: 50px;
     
 }
 
 .maintenance-cost-inner2 .c {
     
-    width: 130px;
+    width: 140px;
+    margin-left: 9px;
 }
+
+.maintenance-cost-inner2 .a {
+    margin-right: 10px;
+}
+
+
 
 input[type=checkbox] {
     zoom: 0.6;
@@ -171,8 +202,8 @@ input[type=radio] {
 
 
 .room-size .detail-label {
-    height: 69px;
-    line-height: 69px;
+    height: 94px;
+    line-height: 94px;
 }
 
 .room-size-inner-container input {
@@ -190,8 +221,8 @@ input[type=radio] {
     margin: 0;
 }
 
-.room-size-inner-container-top {
-    margin-bottom: 5px;
+.room-size-inner-container-top, .room-size-inner-container-bottom {
+    margin:10px 5px;
 }
 
 .floor input {
@@ -210,13 +241,14 @@ input[type=radio] {
 }
 
 .room-option .detail-label {
-    height: 80px;
-    line-height: 80px;
+    height: 106px;
+    line-height: 106px;
 }
 
 
 .room-option-container {
-    width: 479px;
+    width: 679px;
+    padding: 5px 0;
 }
 
 
@@ -225,7 +257,7 @@ input[type=radio] {
     display: inline-block;
     width: 115px;
     line-height: 0;
-    margin-top: 7px;
+    margin: 7px;
      
 }
 
@@ -235,19 +267,24 @@ input[type=radio] {
 }
 
 .loan-container {
-    width: 479px;
+    width: 679px;
 
 }
 
 .loan-container-top {
     height: 50px;
-    margin-left: 5px;
+    padding-left: 5px;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.2);
 
 }
 
 .loan-container-bottom {
     height: 50px;
-    margin-left: 5px;
+    padding-left: 5px;
+}
+
+.loan-container-bottom label {
+    margin-right: 15px;
 }
 
 .companion-animal-container {
@@ -281,36 +318,42 @@ input[type=radio] {
 }
 
 
+.title-name .detail-label {
+    height: 62px;
+    line-height: 62px;
+}
+
 .title-name-container {
     
-    width: 479px;
+    width: 679px;
 }
 
 .title-name-container input {
-    width: 460px;
+    width: 647px;
     height: 30px;
-    margin: 9px 8.5px;
+    margin: 15px;
     
     border: 1px solid;
 }
 
 
 .detail-explanation .detail-label {
-    height: 200px;
+    height: 220px;
+    line-height: 220px;
 }
 
 .detail-explanation-container {
-    width: 479px;
+    width: 679px;
     
 }
 
 .detail-explanation-container textarea {
-    width: 450px;
-    margin: 9px 8.5px;
-    height: 176px;
+    width: 647px;
+    margin: 15px;
+    height: 184px;
     padding: 0;
 }
 
 .host-existence-container label+label {
-    margin-left: 100px;
+    margin-left: 150px;
 }

@@ -116,13 +116,15 @@
     margin-bottom: 50px;
     float: left;
     display: block;
-    background-color: #f5fdff;
+    background-color: #a0dbec;
 }
 
 .view-list-item a {
     width: 85%;
     margin: auto;
     display: block;
+
+    
 }
 
 
@@ -133,7 +135,7 @@
     height: 210px;
     display: block;
     margin: auto;
-    margin-top: 15px;
+    margin-top: 13px;
     margin-bottom: 15px;
 
 }

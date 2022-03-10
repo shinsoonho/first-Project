@@ -138,6 +138,37 @@ body {
     color: #35c5f0;
 }
 
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    position: absolute;
+    background-color: white;
+    display: none;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+
+}
+
+.dropdown-content a:last-child {
+    border: 0;
+}
+
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
 hr {
     border: 0;
     height: 1px;
@@ -152,6 +183,7 @@ hr {
     margin: 0 auto;
     
     display: flex;
+
     
 }
 
@@ -172,12 +204,10 @@ hr {
     display: none;
     width: 20%;
     border: 0;
+    border-right: 1px solid rgb(0, 0, 0, 0.1);
     padding: 0;
     margin: 0;
-
-    height: 0;
-   
-    
+    background-color: #E6F9FE;
     
     position: sticky;
     top: 0;

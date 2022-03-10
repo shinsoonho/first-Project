@@ -230,3 +230,5 @@ function listCheckJeju() {
     document.getElementById('local-list2-item').innerHTML = text;
 }
 
+
+

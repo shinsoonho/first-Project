@@ -2,8 +2,6 @@
 
 
 
-
-
 .detail-search {
     background-color: white;
     width: 800px;
@@ -66,7 +64,7 @@
 
 .local-list3 {
     float: left;
-    width: 379px;
+    width: 375px;
     height: 365px;
     text-align: center;
     line-height: 365px;
@@ -122,6 +120,7 @@
     background-color: #E6F9FE;
     border: 0;
     font-size: 20px;
+    box-shadow: 2px 2px 2px 2px #b3d3db;
     
     
 }
@@ -147,11 +146,19 @@
 .slide-images-container {
     width: 90%;
     height: 350px;
-    padding: 25px 0;
+    padding: 0 0 25px;
     margin: 0 auto;
 
     position: relative;
 }
+
+.slide-images-title p {
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 3px;
+    margin-right: 5px;
+}
+
 
 .slide-fade {
     text-align: center;
@@ -160,8 +167,9 @@
 
 
 .slide-fade img {
+    box-shadow: 2px 2px 4px 1px;
     width: 200px;
-    height: 250px;
+    height: 200px;
     vertical-align: middle;
     
 }

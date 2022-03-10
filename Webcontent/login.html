@@ -4,49 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="base.css">
-    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
     <title>로그인</title>
 </head>
 <body>
+    <wrap id="wrap">
+        <header id="header">
+            <h1>로그인</h1>
+        </header>
 
-    <header id="header">
-        <h1>로그인</h1>
-    </header>
-
-    <main class="main-container">
-        <div class="login-container">
-            <form class="login-form">
-                <div class="login-form-member">
-                    <input type="text" placeholder="아이디">
-                </div>
-                <div class="login-form-member">
-                    <input type="password" placeholder="비밀번호">
-                </div>
-                <div class="login-form-buttom">
-                    <button type="submit">로그인</button>
-                </div>
-                <div class="login-form-member-unit">
-                    <div class="login-form-member-unit-auto">
-                        <label><input type="radio"> 자동로그인</label>
+        <main class="main-container">
+            <div class="login-container">
+                <form class="login-form">
+                    <div class="login-form-member">
+                        <input type="text" placeholder="아이디">
                     </div>
-                    <div class="login-form-member-list">
-                        <a href="#">아이디 찾기</a>
-                        <a href="#">비밀번호 찾기</a>
+                    <div class="login-form-member">
+                        <input type="password" placeholder="비밀번호">
                     </div>
-                </div>
-                <div class="other-login-button">
-                    <div class="kakao-login-button">
-                        <button>카카오 로그인</button>
+                    <div class="login-form-buttom">
+                        <button type="submit">로그인</button>
                     </div>
-                    <div class="google-login-button">
-                        <button>Goggle 로그인</button>
+                    <div class="login-form-member-unit">
+                        <div class="login-form-member-unit-auto">
+                            <label><input type="radio"> 자동로그인</label>
+                        </div>
+                        <div class="login-form-member-list">
+                            <a href="#">아이디 찾기</a>
+                            <a href="#">비밀번호 찾기</a>
+                            <a href="signUp.html">회원가입</a>
+                        </div>
                     </div>
-                </div>
-            </form>
-        </div>
-    </main>
-
+                    <div class="other-login-button">
+                        <div class="kakao-login-button">
+                            <button>카카오 로그인</button>
+                        </div>
+                        <div class="google-login-button">
+                            <button>Goggle 로그인</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </wrap>
     <footer id="footer">
         <h5>2022.Copyright All rights reserved</h5>
     </footer>

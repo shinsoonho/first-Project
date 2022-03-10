@@ -4,24 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="base.css">
-    <link rel="stylesheet" type="text/css" href="news.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/news.css">
     <script src="js/jquery-3.6.0.js"></script>
-    <script>
-        $(function() {
-            $(".menu-toggle").click(function() {
-                this.value += parseInt(1);
-                if(this.value == 1) {
-                    $("#article").css("width","80%");
-                    $("#aside").css("width","20%").css("display","block");
-                } else {
-                    $("#article").css("width","100%");
-                    $("#aside").css("width","0%").css("display","none");
-                    this.value = "";
-                }
-            });
-        });
-    </script>
+    <script src="js/func.js"></script>
+    
     <title>홈페이지</title>
 </head>
 <body>
@@ -34,7 +21,7 @@
             <form>
                 <input class="form-search" type="search">
                 <button type="button" onclick="location.href='login.html'">로그인</button>
-                <button type="button" onclick="makeLogin()">회원가입</button>
+                <button type="button" onclick="location.href='signUp.html'">회원가입</button>
                 <button class="menu-toggle" value="0" type="button">Menu</button>
             </form>
         </div>
@@ -43,16 +30,28 @@
     <div class="clear"></div>
     
     <nav id="gnav">
+        
         <ul>
             <li><a href="main.html">홈</a></li>
-            <li><a href="getHouse.html">집구하기</a></li>
+            <li class="dropdown"><a href="getHouse.html">집구하기</a>
+                <div class="dropdown-content">
+                    <a href="#" style="font-size: 20px">주변매물찾기</a>
+                    <a href="#" style="font-size: 20px">원룸/투룸/빌라</a>
+                    <a href="#" style="font-size: 20px">아파트</a>
+                    <a href="#" style="font-size: 20px">오피스텔</a>
+                </div>
+            </li>
             <li><a href="sellHouse.html">집내놓기</a></li>
             <li><a href="bulletinBoard.html">게시판</a></li>
             <li><a href="news.html">뉴스</a></li>
-            <li><a href="customerCenter.html">고객센터</a></li>
+            <li class="dropdown"><a href="customerCenter.html">고객센터</a>
+                <div class="dropdown-content">
+                    <a href="CustomerCenter.html#customer-manage" style="font-size: 20px">회원정보관리</a>
+                    <a href="CustomerCenter.html#report" style="font-size: 20px">신고하기</a>
+                    <a href="CustomerCenter.html#inquire" style="font-size: 20px">문의하기</a>
+                </div>
+            </li>
         </ul>
-
-
     </nav>
 
     
@@ -60,9 +59,7 @@
     <main id="main">
         <article id="article">
 
-            <h1>아티클</h1>
-            
-            <h1>아티클</h1>
+            <p style="font-size: 40px; text-align: center; margin-top: 50px;">업데이트 예정</p>
 
         </article>
 
